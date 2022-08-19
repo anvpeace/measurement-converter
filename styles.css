@@ -1,0 +1,36 @@
+
+body{
+    margin: 0;
+}
+
+.number-input-container{
+    display: flexbox;
+    flex-direction: row;
+    /* justify-content: center; */
+    background-color: rgb(164, 85, 237);
+}
+
+.input-content{
+    display: block;
+    margin-left: 150px;
+ 
+}
+
+h1{
+    margin-top: 0;
+    margin-left: 43px;
+
+}
+
+input{
+    margin-left: 225px;
+    width: 80px;
+    height: 60px;
+    margin-bottom: 20px;
+
+}
+
+button{
+    margin-left: 238px;
+
+}
