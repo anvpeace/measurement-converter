@@ -2,40 +2,90 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Anton&family=Kanit:wght@700&family=Permanent+Marker&family=Raleway:wght@500&family=Roboto+Condensed&display=swap" rel="stylesheet">
     </head>
     <body>
+
         <div class="number-input-container" style="height: 250px;">
             <div class="input-content">
                 
-                    <h1>Metric/Imperial Unit Conversion</h1>
-                    <input type="number">
+                    <h1>Unit Conversion</h1>
+                    <input type="number" id="meas-val">
                 <div>
-                    <button>Convert</button>
+                    <button id="conversion-btn">CONVERT</button>
                 </div>
             </div>
         </div>
-        <div class="conversion-container">
 
-            <div class="conversion-content" style="height: 550px">
+                    <div class="conversion-container" style="height: 500px">
 
-                <div class="length-convert">
-                    <h2>Length (Meters/Feet)</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            
-                <div class="volume-convert">
-                    <h2>Volume (Liters/Gallons)</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+                        <div class="conversion-content" style="height: 475px">
+                                                    
+                            <div class="length-convert">
+                                <h2>Length (Meters/Feet)</h2>
+                                <p id="meter">1 meter = 3.281 feet | 3.281 feet = 1 meter</p>
+                            </div>
+                        
+                            <div class="volume-convert">
+                                <h2>Volume (Liters/Gallons)</h2>
+                                <p id="liter">1 liter = 0.264 gallon | 0.264 gallons = 1 liter</p>
+                            </div>
 
-                <div class="mass-convert">
-                    <h2>Mass (Kilos/Pounds)</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+                            <div class="mass-convert">
+                                <h2>Mass (Kilograms/Pounds)</h2>
+                                <p id="kilo">1 kilogram = 2.204 pound | 2.204 pounds = 1 kilogram</p>
+                            </div>
 
-            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="second-conversion-container">
+                        <div class="second-conversion-content">
+                            <div id="metric-letter-1">
+                                <h1 class="metric-letters" style="font-size:40px; letter-spacing: 10px;"> K</h1>
+                                <h3>Kilo</h3>
+                            </div>
+
+                            <div id="metric-letter-2">
+                                <h1 class="metric-letters"  style="font-size:40px; letter-spacing: 10px;"> H</h1>
+                                <h3>Hecto</h3>
+                            </div>
+
+                            <div id="metric-letter-3">
+                                <h1  class="metric-letters" style="font-size:40px; letter-spacing: 10px;"> D</h1>
+                                <h3>Deca</h3>
+                            </div>
+
+                                    <div id="MLG">
+                                        <h4>meters</h4>
+                                        <h4>liters</h4>
+                                        <h4>grams</h4>
+                                    </div>
+
+                            <div id="metric-letter-4">
+                                <h1  class="metric-letters" style="font-size:40px; letter-spacing: 10px;"> D</h1>
+                                <h3>Deci</h3>
+                            </div>
+
+                            <div id="metric-letter-5">
+                                <h1  class="metric-letters" style="font-size:40px; letter-spacing: 10px;"> C</h1>
+                                <h3>Centi</h3>
+                            </div>
+
+                            <div id="metric-letter-6">
+                                <h1  class="metric-letters" style="font-size:40px; letter-spacing: 10px;"> M</h1>
+                                <h3>Mili</h3>
+                            </div>
+
+                        </div>
+                        
+
+                    </div>
 
 
-        </div>
+        <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
