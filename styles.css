@@ -78,7 +78,7 @@ button{
 
 .volume-convert{
     margin-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
 }
 
@@ -86,8 +86,8 @@ button{
 
 .mass-convert{
   
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 50px;
 
 }
 
@@ -102,7 +102,7 @@ button{
 
 .second-conversion-content{
     display: inline-flex;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 #metric-letter-1{
