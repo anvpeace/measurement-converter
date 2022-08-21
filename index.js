@@ -8,6 +8,11 @@ const meter = 3.281;
 const liter = 0.264;
 const kilo = 2.204;
 
+const centi = 0.393;
+const milli = 0.004;
+const gram = 0.035;
+
+
 
 let measurementInput = document.getElementById("meas-val");
 
@@ -16,6 +21,10 @@ const convertBtn = document.getElementById("conversion-btn");
 const meterConversion = document.getElementById("meter");
 const literConversion = document.getElementById("liter");
 const kiloConversion = document.getElementById("kilo");
+
+const centiConversion = document.getElementById("centimeter");
+const milliConversion = document.getElementById("milliliter")
+const gramConversion = document.getElementById("gram")
 
 
 
@@ -33,19 +42,33 @@ convertBtn.addEventListener("click", function(){
     let literGallonConvert = conversionNum * liter;
     let kiloPoundConvert = conversionNum * kilo;
 
+    let centiInchesConvert = conversionNum * centi;
+    let milliCupsConvert = conversionNum * milli;
+    let gramsOuncesConvert = conversionNum * gram;
+
+
     var meterNum = meterFeetConvert.toFixed(3);
     var literNum = literGallonConvert.toFixed(3)
     var kiloNum = kiloPoundConvert.toFixed(3);
+
+    var centiNum = centiInchesConvert.toFixed(3);
+    var milliNum = milliCupsConvert.toFixed(3);
+    var gramNum = gramsOuncesConvert.toFixed(3)
+
 
     // meterFeetConvert
     // literGallonConvert
     // kiloPoundConvert
 
     meterConversion.innerHTML = `${conversionNum} meters = ${meterNum} feet | ${meterNum} feet = ${conversionNum} meters`
+    centiConversion.innerHTML = `${conversionNum} centimeter = ${centiNum} inches | ${centiNum} inches = ${conversionNum} centimeters`
 
     literConversion.innerHTML = `${conversionNum} liters = ${literNum} gallons | ${literNum} gallons = ${conversionNum} liters`
+    milliConversion.innerHTML = `${conversionNum} milliliters = ${milliNum} cups | ${milliNum} cups = ${conversionNum} milliliters`
+
 
     kiloConversion.innerHTML = `${conversionNum} kilos = ${kiloNum} pounds | ${kiloNum} pounds = ${conversionNum} kilos`
+    gramConversion.innerHTML = `${conversionNum} grams = ${gramNum} ounces | ${gramNum} ounces = ${conversionNum} grams`
         
 })
 
