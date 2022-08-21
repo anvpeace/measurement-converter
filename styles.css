@@ -12,7 +12,8 @@ body{
     /* justify-content: center; */
     margin-top: 0;
     padding: 30px;
-    background-image:url("https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif");
+    /* background-image:url("https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif"); */
+    background-color: rgb(26, 142, 236);
     background-size: cover;
     /* background-color: rgb(80, 121, 242); */
 }
@@ -28,7 +29,7 @@ body{
     margin-top: 0;
     margin-left: 38px;
     margin-bottom: 30px;
-    text-shadow: 8px 5px red;
+    text-shadow: 8px 2px black;
 
 }
 
